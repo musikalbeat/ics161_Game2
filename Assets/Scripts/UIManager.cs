@@ -6,13 +6,16 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour {
 
     GameObject[] pauseObjects;
+    GameObject[] finishObjects;
 
     // Use this for initialization
     void Start()
     {
         Time.timeScale = 1;
         pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
+        finishObjects = GameObject.FindGameObjectsWithTag("ShowOnFinish");
         hidePaused();
+        hideFinished();
     }
 
     // Update is called once per frame
@@ -81,4 +84,41 @@ public class UIManager : MonoBehaviour {
     {
         SceneManager.LoadScene(level);
     }
+
+    //controls the pausing of the scene
+    public void finishControl()
+    {
+        if (Time.timeScale == 1)
+        {
+            Time.timeScale = 0;
+            showFinished();
+        }
+        else if (Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+            hideFinished();
+        }
+    }
+
+    //shows objects with ShowOnFinish tag
+    public void showFinished()
+    {
+        Time.timeScale = 0;
+        Debug.Log("stop");
+        foreach (GameObject g in finishObjects)
+        {
+            Debug.Log("show");
+            g.SetActive(true);
+        }
+    }
+
+    //hides objects with ShowOnFinish tag
+    public void hideFinished()
+    {
+        foreach (GameObject g in finishObjects)
+        {
+            g.SetActive(false);
+        }
+    }
+
 }

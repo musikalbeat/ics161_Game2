@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - ShowOnPause
+  - blk_proj
+  - wht_proj
+  - Projectile
+  - Enemy
+  - Ground
+  - ShowOnFinish
   layers:
   - Default
   - TransparentFX

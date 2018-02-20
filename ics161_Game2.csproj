@@ -223,7 +223,11 @@
     <Compile Include="Assets\Graphics\SailCharacterPack\Scripts\DemoCamera.cs" />
     <Compile Include="Assets\Graphics\SailCharacterPack\Scripts\FacialExpressions.cs" />
     <Compile Include="Assets\Graphics\SailCharacterPack\Scripts\SmallFishEmitter.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Human.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
+    <Compile Include="Assets\Scripts\OffscreenSpawner.cs" />
+    <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
