@@ -9,16 +9,16 @@ public class Enemy : MonoBehaviour
 {
     public int m_Health = 3;
     public float m_Speed = 7f;
-    public GameObject ui_manager;
-    public int count = 0;
 
     private GameObject m_player;
     private Rigidbody m_rigidbody;
+    private Human script;
 
     private void Awake()
     {
         m_player = GameObject.FindGameObjectWithTag("Player");
         m_rigidbody = GetComponent<Rigidbody>();
+        script = GameObject.Find("Human").GetComponent<Human>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
             Destroy(other.gameObject);
             if (--m_Health <= 0)
             {
-                count += 1;
+                script.gullCount += 1;
                 Destroy(this.gameObject);
             }
         }
