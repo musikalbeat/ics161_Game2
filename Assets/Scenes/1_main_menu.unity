@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.80817634, g: 0.8769223, b: 0.99999946, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -110,8 +109,6 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
-    debug:
-      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &552260640
 Prefab:
@@ -192,7 +189,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4917964748027742, guid: f11eabb313eb6254bbceb8807e923491, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -907.2
+      value: -961.1
       objectReference: {fileID: 0}
     - target: {fileID: 4917964748027742, guid: f11eabb313eb6254bbceb8807e923491, type: 2}
       propertyPath: m_LocalPosition.y
@@ -200,7 +197,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4917964748027742, guid: f11eabb313eb6254bbceb8807e923491, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1000
+      value: -1082.1
       objectReference: {fileID: 0}
     - target: {fileID: 4917964748027742, guid: f11eabb313eb6254bbceb8807e923491, type: 2}
       propertyPath: m_LocalRotation.x
@@ -622,6 +619,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
 --- !u!4 &1349147714
 Transform:
   m_ObjectHideFlags: 0
@@ -1100,7 +1098,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06aec8c7ff2a2174f8c755f09af72d57, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -16.6
+      value: -9.9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06aec8c7ff2a2174f8c755f09af72d57, type: 2}
       propertyPath: m_LocalPosition.z
